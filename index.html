@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kitty Cat League</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Fredoka One', cursive;
+      background: url('KCL%20LOGO%20BANNER.png') no-repeat center center/cover;
+      color: #4b2e2e;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .logo {
+      max-width: 200px;
+      margin-bottom: 1rem;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .title {
+      font-size: 2.5rem;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.7);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      animation: popIn 0.5s ease-in-out;
+    }
+
+    @keyframes popIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .buttons {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      animation: fadeInButtons 1.5s ease-in forwards;
+    }
+
+    @keyframes fadeInButtons {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .button {
+      background: #ffb347;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background: #ff9933;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.8rem;
+      color: #333;
+    }
+
+    .music-player {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(255, 255, 255, 0.6);
+      padding: 0.5rem;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="music-player">
+    <audio controls autoplay loop>
+      <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_dad2b3e58e.mp3?filename=cute-background-music-112196.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <img src="Kityy%20Cat%20League%20Logo.png" alt="Kitty Cat League Logo" class="logo">
+  <div class="title">Welcome to the Kitty Cat League!</div>
+  <div class="buttons">
+    <a href="https://discord.gg/ftSNKH9wF9" target="_blank">
+      <button class="button">Join Discord</button>
+    </a>
+    <a href="about.html">
+      <button class="button">About</button>
+    </a>
+    <a href="teams.html">
+      <button class="button">Teams</button>
+    </a>
+    <a href="events.html">
+      <button class="button">Events</button>
+    </a>
+  </div>
+  <footer>Made with ❤️ for all kitty competitors</footer>
+</body>
+</html>

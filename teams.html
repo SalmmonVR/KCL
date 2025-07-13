@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teams - Kitty Cat League</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Fredoka One', cursive;
+      background: #fff5f5;
+      color: #4b2e2e;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .teams {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .team-card {
+      background: #ffb347;
+      padding: 1rem;
+      border-radius: 15px;
+      width: 200px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .team-card:hover {
+      transform: translateY(-5px);
+    }
+    .team-name {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .team-desc {
+      font-size: 1rem;
+    }
+    a {
+      display: inline-block;
+      margin-top: 2rem;
+      font-size: 1rem;
+      background: #ff9933;
+      padding: 0.75rem 1.5rem;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Meet the Teams</h1>
+  <div class="teams">
+    <div class="team-card">
+      <div class="team-name">Purring Panthers</div>
+      <div class="team-desc">Speed and precision make this team unstoppable.</div>
+    </div>
+    <div class="team-card">
+      <div class="team-name">Whisker Warriors</div>
+      <div class="team-desc">Strategists and sneaky, always one paw ahead.</div>
+    </div>
+    <div class="team-card">
+      <div class="team-name">Meow Masters</div>
+      <div class="team-desc">Known for their flashy style and sharp reflexes.</div>
+    </div>
+  </div>
+  <a href="index.html">Back to Home</a>
+</body>
+</html>
